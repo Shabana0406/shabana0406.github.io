@@ -1,0 +1,121 @@
+:root {
+  --color-dark: #000;
+  --color-dark-gray: #333;
+  --color-light-gray: rgb(213, 211, 211);
+  --color-white: #fff;
+  --color-light: #e4e9f1;
+  --color-danger: #c92e41;
+  --color-primary: #0062f3;
+  --color-success: #009987;
+  --color-warning: #dee71e;
+  --color-purple: #760372;
+
+  --color-danger-light: rgb(234, 81, 81);
+  --color-primary-light: rgb(108, 108, 227);
+  --color-success-light: rgb(89, 223, 198);
+  --color-warning-light: rgb(241, 241, 125);
+  --color-purple-light: rgb(232, 41, 232);
+
+  --card-border-radius: 1.6rem;
+  --border-radius-1: 1rem;
+  --border-radius-2: 0.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: poppins, sans-serif;
+  background: var(--color-light);
+  color: var(--color-dark);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 4.209rem;
+}
+
+h2 {
+  font-size: 3.15rem;
+}
+
+h1 {
+  font-size: 2.369rem;
+}
+
+h1 {
+  font-size: 1.77rem;
+}
+
+h1 {
+  font-size: 1.333rem;
+}
+
+h1 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 0.88rem;
+  color: var(--color-light-gray);
+}
+
+/*================================ NAV ===========================*/
+nav {
+  display: flex;
+  width: 100%;
+  background: var(--color-white);
+}
+
+nav .nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 96%;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav .nav-container img.logo {
+  width: 14rem;
+  height: 3.5rem;
+}
+
+nav .nav-container .search-bar {
+  border-radius: var(--border-radius-2);
+  width: 32vw;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 1rem;
+  height: 2.9rem;
+  left: 25%;
+  background: var(--color-light-gray);
+}
+
+nav .search-bar input[type="search"] {
+  color: var(--color-dark);
+  width: 100%;
+  font-size: 1.9rem;
+  padding: 0.5rem 0.7rem;
+  background: var(--color-light-gray);
+}
